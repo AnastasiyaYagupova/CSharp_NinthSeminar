@@ -7,24 +7,20 @@ N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
 Console.WriteLine("Введите число");
 int N = Convert.ToInt32(Console.ReadLine());
-
-void OutputOfNumbersUpToN (int N)
+int B = 1;
+string OutputOfNumbersUpToN (int B, int N)
 {
-    if(N >= 1)
-    {
-    Console.Write(N + " ");
-    N--;
-    OutputOfNumbersUpToN(N);
-    }
+    if (B <= N) return OutputOfNumbersUpToN(B + 1, N) + $"{B} ";
+    else return String.Empty;
 }
-
-OutputOfNumbersUpToN(N);
+Console.WriteLine(OutputOfNumbersUpToN(B,N));
 
 // void OutputOfNumbersUpToN (int N)
 // {
-//     while(N >= 1)
+//     if(N >= 1)
 //     {
 //     Console.Write(N + " ");
 //     N--;
+//     OutputOfNumbersUpToN(N);
 //     }
 // }
