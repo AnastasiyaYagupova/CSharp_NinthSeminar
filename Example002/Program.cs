@@ -25,7 +25,7 @@ int SumOfNumbers002(int M, int N)
 
 if(M < N)
 {
-Console.WriteLine(SumOfNumbers001(M,N));
+    Console.WriteLine(SumOfNumbers001(M,N));
 }
 else
 {
