@@ -23,11 +23,5 @@ int SumOfNumbers002(int M, int N)
     else return N + SumOfNumbers002(M, N + 1);
 }
 
-if(M < N)
-{
-    Console.WriteLine(SumOfNumbers001(M,N));
-}
-else
-{
-    Console.WriteLine(SumOfNumbers002(M,N));
-}
+if(M < N) Console.WriteLine(SumOfNumbers001(M,N));
+else Console.WriteLine(SumOfNumbers002(M,N));
