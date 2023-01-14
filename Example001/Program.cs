@@ -14,13 +14,3 @@ string OutputOfNumbersUpToN (int B, int N)
     else return String.Empty;
 }
 Console.WriteLine(OutputOfNumbersUpToN(B,N));
-
-// void OutputOfNumbersUpToN (int N)
-// {
-//     if(N >= 1)
-//     {
-//     Console.Write(N + " ");
-//     N--;
-//     OutputOfNumbersUpToN(N);
-//     }
-// }
